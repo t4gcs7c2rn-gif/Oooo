@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RABBIT | รับยศ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#080607;color:#f5f5f5;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;padding:20px}
+.card{width:100%;max-width:430px;padding:32px 24px;text-align:center;border-radius:26px;background:linear-gradient(180deg,#1a0b10,#0d0809);border:1px solid #602037;box-shadow:0 0 35px #9d173233}
+.logo{width:86px;height:86px;border-radius:25px;background:#5865f2;display:flex;align-items:center;justify-content:center;margin:12px auto 22px;font-size:42px}
+h1{font-size:32px;margin:8px 0;letter-spacing:3px}.sub{font-size:12px;letter-spacing:2px;color:#aaa}
+.status{display:inline-block;margin:23px 0 8px;border:1px solid #9c2b4a;color:#ff6687;background:#260d17;border-radius:30px;padding:10px 16px;font-size:13px}
+.circle{width:150px;height:150px;border:2px dashed #862b47;border-radius:50%;margin:22px auto;display:flex;align-items:center;justify-content:center;color:#ff416b;font-size:55px}
+h2{font-size:23px}p{color:#c7c0c3;line-height:1.7;font-size:14px}
+button{width:100%;border:0;border-radius:13px;padding:16px;color:white;font-size:16px;font-weight:bold;margin-top:14px;cursor:pointer}
+.primary{background:linear-gradient(90deg,#a80d35,#e52b53)}.back{background:#242128;border:1px solid #51434a;color:#eee}.back:active,.primary:active{transform:scale(.98)}
+.note{font-size:12px;color:#8b8588;margin-top:22px}
+</style></head><body>
+<main class="card">
+<div class="logo">◉</div><h1>RABBIT</h1><div class="sub">SECURE ROLE VERIFICATION</div>
+<div class="status">● ROLE VERIFICATION</div><div class="circle">✓</div>
+<h2>ยืนยันตัวตนเพื่อรับยศ</h2>
+<p>กดปุ่มด้านล่างเพื่อเข้าสู่ระบบ Discord<br>และดำเนินการรับยศในเซิร์ฟเวอร์</p>
+<button class="primary" onclick="location.href='/login'">ยืนยันผ่าน Discord</button>
+<button class="back" onclick="goBack()">← ย้อนกลับ</button>
+<div class="note">ไม่ต้องกรอกรหัสผ่าน Discord หรือรหัส 2FA ในหน้านี้</div>
+</main>
+<script>
+function goBack(){ if(history.length>1){history.back()} else {location.href='https://discord.com'} }
+</script>
+</body></html>
